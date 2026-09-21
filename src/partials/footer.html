@@ -1,0 +1,65 @@
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer__brand">
+          <a class="nav__brand" href="{{PREFIX}}index.html">
+            <img src="{{PREFIX}}assets/images/logo.png" alt="{{BUSINESS_NAME}} logo" class="nav__logo" width="52" height="52">
+            <span class="nav__name">
+              {{BUSINESS_NAME}}
+              <small>Handloom Sarees</small>
+            </span>
+          </a>
+          <p>Authentic handloom sarees, woven with care and offered with warm, personal service. Tradition woven into every thread.</p>
+          <div class="footer__social">
+            {{SOCIAL_LINKS}}
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="{{PREFIX}}index.html">Home</a></li>
+            <li><a href="{{PREFIX}}collection.html">Collection</a></li>
+            <li><a href="{{PREFIX}}about.html">About Us</a></li>
+            <li><a href="{{PREFIX}}gallery.html">Gallery</a></li>
+            <li><a href="{{PREFIX}}contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="{{PREFIX}}contact.html">Phone: {{PHONE}}</a></li>
+            <li><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></li>
+            <li>{{ADDRESS}}</li>
+            <li>{{HOURS_SUMMARY}}</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Order &amp; Enquiries</h4>
+          <ul>
+            <li><a href="#" data-wa="general">Order on WhatsApp</a></li>
+            <li><a href="#" data-wa="collection">Ask about the collection</a></li>
+            <li><a href="{{PREFIX}}contact.html">Send an enquiry</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> {{BUSINESS_NAME}}. All rights reserved.</span>
+        <span>Handloom craftsmanship · {{TAGLINE}}</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-float" href="#" data-wa="general" aria-label="Chat with us on WhatsApp">
+    {{WHATSAPP_ICON}}
+  </a>
+
+  <script src="{{PREFIX}}assets/js/whatsapp.js"></script>
+  <script src="{{PREFIX}}assets/js/main.js"></script>
+  {{PAGE_SCRIPTS}}
+</body>
+</html>

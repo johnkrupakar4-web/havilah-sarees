@@ -1,0 +1,90 @@
+<main id="main">
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow" style="justify-content:center">The Collection</span>
+      <h1 class="section-title">Handloom Sarees, Chosen With Care</h1>
+      <p class="section-lead" style="max-width:56ch">
+        Browse by category, fabric, colour or price. See something you love?
+        Order it directly on WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== COLLECTION ===================== -->
+  <section class="section" style="padding-top: 3rem">
+    <div class="container">
+
+      {{SAMPLE_BANNER}}
+
+      <!-- Filters -->
+      <form class="filter-bar" data-filter-form aria-label="Filter the collection">
+        <div class="field">
+          <label for="filter-category">Category</label>
+          <select id="filter-category" name="category">
+            <option value="">All categories</option>
+            {{CATEGORY_OPTIONS}}
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-fabric">Fabric</label>
+          <select id="filter-fabric" name="fabric">
+            <option value="">All fabrics</option>
+            {{FABRIC_OPTIONS}}
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-color">Colour</label>
+          <select id="filter-color" name="color">
+            <option value="">All colours</option>
+            {{COLOUR_OPTIONS}}
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-price">Price</label>
+          <select id="filter-price" name="price">
+            <option value="">Any price</option>
+            <option value="under-3000">Under ₹3,000</option>
+            <option value="3000-6000">₹3,000 – ₹6,000</option>
+            <option value="6000-10000">₹6,000 – ₹10,000</option>
+            <option value="above-10000">Above ₹10,000</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-availability">Availability</label>
+          <select id="filter-availability" name="availability">
+            <option value="">Any</option>
+            <option value="in-stock">In Stock</option>
+            <option value="made-to-order">Made to Order</option>
+            <option value="out-of-stock">Out of Stock</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-q">Search</label>
+          <input id="filter-q" name="q" type="search" placeholder="Search sarees…" autocomplete="off">
+        </div>
+        <div class="filter-bar__actions">
+          <button class="btn btn--outline-dark btn--sm" type="submit">Apply</button>
+          <button class="btn btn--gold-deep btn--sm" type="button" data-filter-clear>Clear</button>
+        </div>
+      </form>
+
+      <p class="collection-count" data-collection-count aria-live="polite">Loading…</p>
+
+      <!-- Product grid -->
+      <div class="card-grid">
+        {{PRODUCT_CARDS}}
+      </div>
+
+      <!-- Empty state -->
+      <div class="collection-empty" data-collection-empty hidden>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <h3 style="font-size:1.4rem; margin-top:1rem">No sarees match those filters</h3>
+        <p>Try removing a filter or two — or message us on WhatsApp and we will look for the right saree for you.</p>
+        <div style="margin-top:1.5rem">
+          <a class="btn btn--whatsapp" href="#" data-wa="collection">Ask us on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

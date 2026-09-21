@@ -1,0 +1,23 @@
+{
+  "name": "havilah-sarees",
+  "version": "1.0.0",
+  "description": "Havilah Sarees — an elegant handloom saree business website. Static, dependency-free, with WhatsApp ordering.",
+  "scripts": {
+    "build": "node scripts/generate-placeholders.mjs && node scripts/build.mjs && node scripts/verify.mjs",
+    "start": "node scripts/build.mjs && node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "keywords": [
+    "havilah-sarees",
+    "handloom",
+    "sarees",
+    "static-site",
+    "whatsapp-ordering"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,36 @@
+<header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__brand" href="{{PREFIX}}index.html">
+          <img src="{{PREFIX}}assets/images/logo.png" alt="{{BUSINESS_NAME}} logo" class="nav__logo" width="52" height="52">
+          <span class="nav__name">
+            {{BUSINESS_NAME}}
+            <small>Handloom Sarees</small>
+          </span>
+        </a>
+
+        <ul class="nav__links" data-nav-menu id="nav-links">
+          <li><a class="nav__link" href="{{PREFIX}}index.html"{{ACTIVE_HOME}}>Home</a></li>
+          <li><a class="nav__link" href="{{PREFIX}}collection.html"{{ACTIVE_COLLECTION}}>Collection</a></li>
+          <li><a class="nav__link" href="{{PREFIX}}about.html"{{ACTIVE_ABOUT}}>About</a></li>
+          <li><a class="nav__link" href="{{PREFIX}}gallery.html"{{ACTIVE_GALLERY}}>Gallery</a></li>
+          <li><a class="nav__link" href="{{PREFIX}}contact.html"{{ACTIVE_CONTACT}}>Contact</a></li>
+          <li class="nav__new">
+            <a class="btn btn--gold-deep btn--block" href="#" data-wa="general">
+              {{WHATSAPP_ICON}} Order on WhatsApp
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__actions">
+          <a class="btn btn--whatsapp btn--sm nav__action-wa" href="#" data-wa="general" aria-label="Order on WhatsApp">
+            {{WHATSAPP_ICON}} WhatsApp
+          </a>
+          <button class="nav__toggle" data-nav-toggle aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+            <svg class="icon--menu" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <svg class="icon--close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>

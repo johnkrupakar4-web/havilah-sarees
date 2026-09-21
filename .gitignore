@@ -1,0 +1,29 @@
+# --- Dependencies ---
+node_modules/
+
+# --- Build output (generated site; never commit it) ---
+dist/
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Editor ---
+.vscode/
+.idea/
+*.swp
+
+# --- Secrets / environment ---
+.env
+.env.*
+!.env.example
+
+# --- Local server config ---
+/config/local.js
