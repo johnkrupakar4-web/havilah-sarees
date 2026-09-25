@@ -41,7 +41,7 @@ module.exports = {
   /* ---------- Website ---------- */
   // Used only for canonical URLs, Open Graph and the sitemap.
   // Example: 'https://www.havilahsarees.com'
-  siteUrl: 'https://www.example.com', // CHANGE ME
+  siteUrl: 'https://johnkrupakar4-web.github.io/havilah-sarees',
 
   /* ---------- Development-only notice ---------- */
   // Set to true while the site is under construction so sample products
