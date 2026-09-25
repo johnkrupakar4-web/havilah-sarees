@@ -438,6 +438,7 @@ function build() {
 
   /* 5) Assets & SEO --------------------------------------------------- */
   fs.cpSync(path.join(ROOT, 'assets'), path.join(DIST, 'assets'), { recursive: true });
+  fs.copyFileSync(path.join(ROOT, 'googlea3b55e5d70974b0c.html'), path.join(DIST, 'googlea3b55e5d70974b0c.html'));
 
   fs.writeFileSync(
     path.join(DIST, 'robots.txt'),
